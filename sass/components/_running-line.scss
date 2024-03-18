@@ -1,0 +1,17 @@
+.running-line-limiter {
+    width: 100%;
+    overflow: hidden;
+}
+
+.running-line {
+    width: max-content;
+    padding: 18px 0;
+    background: #F54932;
+}
+
+.running-line__text {
+    @extend %font-added;
+    @include font($size: 2.2rem, $height: 110%);
+    margin: 0px;
+    color: #FFFFFF;
+}

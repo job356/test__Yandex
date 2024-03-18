@@ -5,28 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Тестовое задание</title>
     <link rel="stylesheet" href="sass/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <div class="logo">
-                <object class="logo__icon" data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
-                <object class="logo__icon" data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
-                <object class="logo__icon" data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
-                <object class="logo__icon" data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
-                <p class="logo__text">Клуб четырех коней</p>
-                <div class="header-content">
-                    <h1 class="header-content__title">Превратите уездный город в столицу земного шара</h1>
-                    <p class="header-content__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
-                    <button class="button">Поддержать шахматную мысль</button>
-                    <button class="button">Подробнее о турнире</button>
-                    <div class="running-line">
-                        <p class="running-line__text">&#183;Дело помощи утопающим — дело рук самих утопающих!</p>
-                        <p class="running-line__text">&#183;Шахматы двигают вперед не только культуру, но и экономику!</p>
-                        <p class="running-line__text">&#183;Лед тронулся, господа присяжные заседатели!</p>
-                    </div>
+                <div class="logo__icon">
+                    <object data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
+                    <object data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
+                    <object data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
+                    <object data="Assets/icons/horse-figure.svg" type="image/svg+xml"></object>
                 </div>
+                <p class="logo__text">Клуб <br> четырех коней</p>
+            </div>
+            <div class="header-content">
+                <h1 class="header-content__title">Превратите<br>уездный город<br>
+                    <span class="header-content__title header-content__title_center">в столицу</span><br>
+                    <span class="header-content__title header-content__title_right">земного шара</span>
+                </h1>
+                <p class="header-content__subtitle">Оплатите взнос на телеграммы для организации Международного васюкинского турнира по шахматам</p>
+                <div class="header-button-block">
+                    <button class="header-button header-button_dark">Поддержать шахматную мысль</button>
+                    <button class="header-button header-button_light">Подробнее о турнире</button>
+                </div>
+            </div>
+        </div>
+        <div class="running-line-limiter">
+            <div class="running-line">
+                <p class="running-line__text">&#183; Дело помощи утопающим — дело рук самих утопающих! &#183; Шахматы двигают вперед не только культуру, но и экономику! &#183; Лед тронулся, господа присяжные заседатели!</p>
             </div>
         </div>
     </header>

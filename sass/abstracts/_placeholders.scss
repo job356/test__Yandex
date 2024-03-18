@@ -1,7 +1,11 @@
 %font-primary {
-    font-family: 'Golos Text', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Golos Text', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
 }
 
 %font-added {
-    font-family: 'Merriweather', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Merriweather', 'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+}
+
+%transition {
+    transition: all 0.3s ease;
 }

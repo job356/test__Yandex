@@ -401,24 +401,138 @@ ul {
   box-sizing: border-box;
 }
 
-h1 {
-  font-family: "Merriweather", Verdana, Geneva, Tahoma, sans-serif;
+.logo__text, .header-content__subtitle, .header-button {
+  font-family: "Golos Text", "Verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+.running-line__text, .header-content__title {
+  font-family: "Merriweather", "Verdana", "Geneva", "Tahoma", "sans-serif";
+}
+
+.header-button {
+  transition: all 0.3s ease;
 }
 
 html {
   font-size: 10px;
 }
 
-h1 {
+.header-button-block {
+  display: flex;
+  gap: 16px;
+}
+
+.header-button {
+  font-variant: normal;
   font-style: normal;
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 120%;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 130%;
+  width: 263px;
+  padding: 20px 49px;
+  text-align: center;
+  border: none;
+  border-radius: 66px;
+}
+.header-button_dark {
+  background: #1F1F1F;
+  color: #FFFFFF;
+}
+.header-button_dark:hover {
+  background: #FBCE51;
+  color: #1F1F1F;
+}
+.header-button_light {
+  background: transparent;
+  color: #1F1F1F;
+  border: 2px solid #313131;
+}
+.header-button_light:hover {
+  background: #1F1F1F;
+  color: #FFFFFF;
 }
 
 .wrapper {
   max-width: 1222px;
   margin: 0 auto;
+}
+
+.header {
+  padding: 26px 0 0;
+  background-repeat: no-repeat;
+  background-image: url(../Assets/img/header-bg.png);
+}
+
+.header-content {
+  max-width: 542px;
+  padding: 62px 0 115px;
+}
+
+.header-content__title {
+  display: inline-block;
+  font-variant: normal;
+  font-style: normal;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 110%;
+  color: #313131;
+  text-transform: uppercase;
+  margin: 0px;
+}
+.header-content__title > * {
+  width: 542px;
+}
+.header-content__title_center {
+  text-align: center;
+}
+.header-content__title_right {
+  text-align: right;
+}
+
+.header-content__subtitle {
+  font-variant: normal;
+  font-style: normal;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 130%;
+  color: #313131;
+  text-align: center;
+  margin: 24px 0 40px;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo__text {
+  font-variant: normal;
+  font-style: normal;
+  font-size: 1.665rem;
+  font-weight: 700;
+  line-height: 108%;
+  color: #595653;
+  margin: 0 0 0 6.35px;
+}
+
+.running-line-limiter {
+  width: 100%;
+  overflow: hidden;
+}
+
+.running-line {
+  width: max-content;
+  padding: 18px 0;
+  background: #F54932;
+}
+
+.running-line__text {
+  font-variant: normal;
+  font-style: normal;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 110%;
+  margin: 0px;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */

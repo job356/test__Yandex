@@ -1,0 +1,32 @@
+.header-button-block {
+    display: flex;
+    gap: 16px;
+}
+
+.header-button {
+    @extend %font-primary;
+    @include font($size: 1.6rem, $weight: 500, $height: 130%);
+    @extend %transition;
+    width: 263px;
+    padding: 20px 49px;
+    text-align: center;
+    border: none;
+    border-radius: 66px;
+    &_dark{
+        background: $text-color-btn-dark;
+        color: #FFFFFF;
+    }
+    &_dark:hover {
+        background: #FBCE51;
+        color: $text-color-btn-dark;
+    }
+    &_light {
+        background: transparent;
+        color: $text-color-btn-dark;
+        border: 2px solid $text-color-dark;
+    }
+    &_light:hover {
+        background: $text-color-btn-dark;
+        color: #FFFFFF;
+    }
+}

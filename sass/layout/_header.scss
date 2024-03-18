@@ -1,0 +1,36 @@
+.header {
+    padding: 26px 0 0;
+    background-repeat: no-repeat;
+    background-image: url(../Assets/img/header-bg.png);
+}
+
+.header-content {
+    max-width: 542px;
+    padding: 62px 0 115px;
+}
+
+.header-content__title {
+    display: inline-block;
+    @extend %font-added;
+    @include font($size: 6rem, $height: 110%);
+    color: $text-color-dark;
+    text-transform: uppercase;
+    margin: 0px;
+    >* {
+        width: 542px;
+    }
+    &_center {
+        text-align: center;
+    }
+    &_right {
+        text-align: right;
+    }
+}
+
+.header-content__subtitle {
+    @extend %font-primary;
+    @include font($size: 1.8rem, $height: 130%);
+    color: $text-color-dark;
+    text-align: center;
+    margin: 24px 0 40px;
+}

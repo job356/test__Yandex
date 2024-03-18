@@ -1,4 +1,5 @@
 @mixin font ($style: normal, $size, $weight: 400, $height: 120%) {
+    font-variant: normal;
     font-style: $style;
     font-size: $size;
     font-weight: $weight;
