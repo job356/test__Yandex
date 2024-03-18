@@ -401,11 +401,11 @@ ul {
   box-sizing: border-box;
 }
 
-.logo__text, .header-content__subtitle, .header-button {
+.chess-info__link, .value, .condition, .logo__text, .header-content__subtitle, .header-button {
   font-family: "Golos Text", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.running-line__text, .header-content__title {
+.chess-info-title__text, .running-line__text, .header-content__title {
   font-family: "Merriweather", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
@@ -423,7 +423,6 @@ html {
 }
 
 .header-button {
-  font-variant: normal;
   font-style: normal;
   font-size: 1.6rem;
   font-weight: 500;
@@ -470,7 +469,6 @@ html {
 
 .header-content__title {
   display: inline-block;
-  font-variant: normal;
   font-style: normal;
   font-size: 6rem;
   font-weight: 400;
@@ -490,7 +488,6 @@ html {
 }
 
 .header-content__subtitle {
-  font-variant: normal;
   font-style: normal;
   font-size: 1.8rem;
   font-weight: 400;
@@ -505,7 +502,6 @@ html {
 }
 
 .logo__text {
-  font-variant: normal;
   font-style: normal;
   font-size: 1.665rem;
   font-weight: 700;
@@ -526,13 +522,80 @@ html {
 }
 
 .running-line__text {
-  font-variant: normal;
   font-style: normal;
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 110%;
   margin: 0px;
   color: #FFFFFF;
+}
+
+.chess-info-title {
+  display: flex;
+  padding: 80px 0 64px;
+}
+
+.chess-info-title__text {
+  font-style: normal;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 135%;
+  margin: 0 0 33.19px;
+  text-transform: uppercase;
+  color: #313131;
+}
+.chess-info-title__text_light {
+  color: #F54932;
+}
+
+.chess-info-subtitle {
+  display: flex;
+  gap: 41px;
+}
+
+.chess-info-subtitle-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.condition {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+  color: #313131;
+  opacity: 0.7;
+  padding: 16px 16px 16px 0;
+  border-bottom: 2px solid #D0D0D0;
+  border-right: 2px solid #D0D0D0;
+}
+.condition_non-border {
+  border-bottom: none;
+}
+
+.value {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 120%;
+  color: #313131;
+  padding: 16px 0 16px 16px;
+  border-bottom: 2px solid #D0D0D0;
+}
+.value_non-border {
+  display: flex;
+  gap: 11px;
+  border-bottom: none;
+}
+
+.chess-info__link {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+  color: #3057A2;
+  text-decoration: none;
+  margin: 48px 0 0;
 }
 
 /*# sourceMappingURL=style.css.map */

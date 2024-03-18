@@ -1,0 +1,59 @@
+.chess-info-title {
+    display: flex;
+    padding: 80px 0 64px;
+}
+
+.chess-info-title__text {
+    @extend %font-added;
+    @include font($size: 3.6rem, $height: 135%);
+    margin: 0 0 33.19px;
+    text-transform: uppercase;
+    color: $text-color-dark;
+    &_light {
+        color: #F54932;
+    }
+}
+
+.chess-info-subtitle {
+    display: flex;
+    gap: 41px;
+}
+
+.chess-info-subtitle-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.condition {
+    @extend %font-primary;
+    @include font($size: 2rem, $height: 120%);
+    color: $text-color-dark;
+    opacity: 0.7;
+    padding: 16px 16px 16px 0;
+    border-bottom: 2px solid #D0D0D0;
+    border-right: 2px solid #D0D0D0;
+    &_non-border {
+        border-bottom: none
+    }
+}
+
+.value {
+    @extend %font-primary;
+    @include font($size: 2rem, $weight: 600, $height: 120%);
+    color: $text-color-dark;
+    padding: 16px 0 16px 16px;
+    border-bottom: 2px solid #D0D0D0;
+    &_non-border {
+        display: flex;
+        gap: 11px;
+        border-bottom: none;
+    }
+}
+
+.chess-info__link {
+    @extend %font-primary;
+    @include font($size: 2rem, $height: 120%);
+    color: $text-color-link;
+    text-decoration: none;
+    margin: 48px 0 0;
+}
