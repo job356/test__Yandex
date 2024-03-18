@@ -1,4 +1,13 @@
-h1 {
-    color: red;
-}
+@import "base/normilize";
 
+//abstracts
+@import "abstracts/mixins";
+@import "abstracts/constants";
+@import "abstracts/placeholders";
+
+//base
+@import "base/base";
+
+
+//layout
+@import "layout/wrapper";
