@@ -30,3 +30,18 @@
         color: #FFFFFF;
     }
 }
+
+.show-more-button {
+    @extend %font-primary;
+    @include font($size: 1.6rem, $weight: 500);
+    padding: 12px;
+    background: #FFFFFF;
+    color: $text-color-link;
+    border-radius: 62px;
+    border: 1px solid $text-color-link;
+    &:hover {
+        @extend %transition;
+        background: $text-color-link;
+        color: #FFFFFF;
+    }
+}

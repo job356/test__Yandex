@@ -1,0 +1,12 @@
+.footer {
+    padding: 40px 0 72px;
+    background: #E9DED4;
+}
+
+.footer__content {
+    @extend %font-primary;
+    @include font($size: 1.6rem);
+    margin: 0px;
+    color: $text-color-dark;
+    opacity: 0.6;
+}

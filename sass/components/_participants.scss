@@ -1,0 +1,86 @@
+.participants {
+    padding: 200px 0 0;
+}
+
+.participants-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.participants-title__text {
+    @extend %font-added;
+    @include font($size: 5.4rem);
+    text-transform: uppercase;
+    color: $text-color-dark;
+    margin: 0px;
+}
+
+.slider-control {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.arrow-contol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: $text-color-dark;
+    &:hover {
+        @extend %transition;
+        background: #FBCE51;
+    }
+}
+
+.slide-value{
+    display: flex;
+}
+
+.slide-value {
+    @extend %font-primary;
+    @include font($size: 1.6rem);
+    margin: 0px;
+    color: $text-color-dark;
+    &_default {
+        opacity: 0.6;
+    }
+}
+
+.slider-limitter {
+    padding: 60px 0 140px;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+}
+
+.participants-slide {
+    padding: 0 37px;
+}
+
+.participants-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.participants-content__name {
+    @extend %font-primary;
+    @include font($size: 2.4rem, $weight: 600);
+    margin: 28px 0 6px;
+    color: $text-color-dark;
+}
+
+.participants-content__description {
+    @extend %font-primary;
+    @include font($size: 2rem);
+    margin: 0 0 20px;
+    color: $text-color-dark;
+    opacity: 0.6;
+}

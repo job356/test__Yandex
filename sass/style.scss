@@ -13,9 +13,11 @@
 //layout
 @import "layout/wrapper";
 @import "layout/header";
+@import "layout/footer";
 
 //components
 @import "components/logo";
 @import "components/running-line";
 @import "components/chess-info";
 @import "components/step-blok.scss";
+@import "components/participants";

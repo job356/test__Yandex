@@ -401,15 +401,15 @@ ul {
   box-sizing: border-box;
 }
 
-.step-description, .step-point__text, .step-block__title_small, .chess-info__link, .value, .condition, .logo__text, .header-content__subtitle, .header-button {
+.participants-content__description, .participants-content__name, .slide-value, .step-description, .step-point__text, .step-block__title_small, .chess-info__link, .value, .condition, .logo__text, .footer__content, .header-content__subtitle, .show-more-button, .header-button {
   font-family: "Golos Text", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.step-block__title, .chess-info-title__text, .running-line__text, .header-content__title {
+.participants-title__text, .step-block__title, .chess-info-title__text, .running-line__text, .header-content__title {
   font-family: "Merriweather", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.header-button {
+.arrow-contol:hover, .show-more-button:hover, .header-button {
   transition: all 0.3s ease;
 }
 
@@ -448,6 +448,22 @@ html {
 }
 .header-button_light:hover {
   background: #1F1F1F;
+  color: #FFFFFF;
+}
+
+.show-more-button {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 120%;
+  padding: 12px;
+  background: #FFFFFF;
+  color: #3057A2;
+  border-radius: 62px;
+  border: 1px solid #3057A2;
+}
+.show-more-button:hover {
+  background: #3057A2;
   color: #FFFFFF;
 }
 
@@ -495,6 +511,21 @@ html {
   color: #313131;
   text-align: center;
   margin: 24px 0 40px;
+}
+
+.footer {
+  padding: 40px 0 72px;
+  background: #E9DED4;
+}
+
+.footer__content {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0px;
+  color: #313131;
+  opacity: 0.6;
 }
 
 .logo {
@@ -684,6 +715,100 @@ html {
   position: absolute;
   top: 351px;
   left: 884px;
+}
+
+.participants {
+  padding: 200px 0 0;
+}
+
+.participants-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participants-title__text {
+  font-style: normal;
+  font-size: 5.4rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #313131;
+  margin: 0px;
+}
+
+.slider-control {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.arrow-contol {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #313131;
+}
+.arrow-contol:hover {
+  background: #FBCE51;
+}
+
+.slide-value {
+  display: flex;
+}
+
+.slide-value {
+  font-style: normal;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0px;
+  color: #313131;
+}
+.slide-value_default {
+  opacity: 0.6;
+}
+
+.slider-limitter {
+  padding: 60px 0 140px;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  gap: 20px;
+}
+
+.participants-slide {
+  padding: 0 37px;
+}
+
+.participants-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.participants-content__name {
+  font-style: normal;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 120%;
+  margin: 28px 0 6px;
+  color: #313131;
+}
+
+.participants-content__description {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 0 20px;
+  color: #313131;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=style.css.map */
