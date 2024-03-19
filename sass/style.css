@@ -401,11 +401,11 @@ ul {
   box-sizing: border-box;
 }
 
-.chess-info__link, .value, .condition, .logo__text, .header-content__subtitle, .header-button {
+.step-description, .step-point__text, .step-block__title_small, .chess-info__link, .value, .condition, .logo__text, .header-content__subtitle, .header-button {
   font-family: "Golos Text", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
-.chess-info-title__text, .running-line__text, .header-content__title {
+.step-block__title, .chess-info-title__text, .running-line__text, .header-content__title {
   font-family: "Merriweather", "Verdana", "Geneva", "Tahoma", "sans-serif";
 }
 
@@ -596,6 +596,94 @@ html {
   color: #3057A2;
   text-decoration: none;
   margin: 48px 0 0;
+}
+
+.step-wrapper {
+  position: relative;
+}
+
+.step-block__title {
+  font-style: normal;
+  font-size: 5.4rem;
+  font-weight: 400;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin: 75px 0 54px;
+  color: #313131;
+}
+
+.step-block__title_small {
+  display: inline-block;
+  width: 300px;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 120%;
+  color: #3057A2;
+}
+
+.steps-board {
+  display: grid;
+  grid-template-rows: 112px 112px 136px;
+  grid-template-columns: 394px 394px 394px;
+  gap: 20px;
+}
+
+.step {
+  padding: 20px;
+  background-image: url(../Assets/img/step-bg.png);
+}
+.step_vertical {
+  grid-row-start: 1;
+  grid-column-start: 3;
+  grid-row-end: 3;
+  grid-column-end: 4;
+}
+.step_horizontal {
+  grid-row-start: 3;
+  grid-column-start: 2;
+  grid-row-end: 4;
+  grid-column-end: 4;
+  padding-right: 285px;
+}
+
+.step-content {
+  display: flex;
+  gap: 16px;
+}
+
+.step-point {
+  display: flex;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 11px 0 6px;
+  background: #FFFFFF;
+}
+
+.step-point__text {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: #313131;
+  margin: 0px;
+}
+
+.step-description {
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: #313131;
+  margin: 0px;
+}
+
+.step-block__img {
+  position: absolute;
+  top: 351px;
+  left: 884px;
 }
 
 /*# sourceMappingURL=style.css.map */

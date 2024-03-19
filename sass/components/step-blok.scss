@@ -1,0 +1,82 @@
+.step-wrapper {
+    position: relative;
+}
+
+.step-block__title {
+    @extend %font-added;
+    @include font($size: 5.4rem);
+    text-transform: uppercase;
+    margin: 75px 0 54px;
+    color: $text-color-dark
+}
+
+.step-block__title_small {
+    display: inline-block;
+    width: 300px;
+    @extend %font-primary;
+    @include font($size: 2rem);
+    color: $text-color-link;
+}
+
+.steps-board {
+    display: grid;
+    grid-template-rows: 112px 112px 136px;
+    grid-template-columns: 394px 394px 394px;
+    gap: 20px 
+}
+
+.step {
+    padding: 20px;
+    background-image: url(../Assets/img/step-bg.png);
+    &_vertical {
+        grid-row-start: 1;
+        grid-column-start: 3;
+
+        grid-row-end: 3;
+        grid-column-end: 4;
+    }
+    &_horizontal {
+        grid-row-start: 3;
+        grid-column-start: 2;
+
+        grid-row-end: 4;
+        grid-column-end: 4;
+
+        padding-right: 285px;
+    }
+}
+
+.step-content {
+    display: flex;
+    gap: 16px;
+}
+
+.step-point{
+    display: flex;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    padding: 11px 0 6px;
+    background: #FFFFFF;
+}
+
+.step-point__text {
+    @extend %font-primary;
+    @include font($size: 2rem, $weight: 500);
+    color: $text-color-dark;
+    margin: 0px;
+}
+
+.step-description {
+    @extend %font-primary;
+    @include font($size: 2rem, $weight: 500);
+    color: $text-color-dark;
+    margin: 0px;
+}
+
+.step-block__img {
+    position: absolute;
+    top: 351px;
+    left: 884px;
+}
