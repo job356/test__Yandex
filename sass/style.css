@@ -649,6 +649,11 @@ html {
   display: flex;
   padding: 80px 0 64px;
 }
+@media (max-width: 375px) {
+  .chess-info-title {
+    padding: 48px 0 33px;
+  }
+}
 
 .chess-info-title__text {
   font-style: normal;
@@ -662,15 +667,69 @@ html {
 .chess-info-title__text_light {
   color: #F54932;
 }
+@media (max-width: 375px) {
+  .chess-info-title__text {
+    font-style: normal;
+    font-size: 2.8rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0px;
+  }
+}
+
+.chess-info-title__img {
+  display: inline-block;
+}
+@media (max-width: 375px) {
+  .chess-info-title__img {
+    display: none;
+  }
+}
+.chess-info-title__img_mobile {
+  display: none;
+}
+@media (max-width: 375px) {
+  .chess-info-title__img_mobile {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 375px) {
+  .mobile_block {
+    padding: 24px 0;
+  }
+}
 
 .chess-info-subtitle {
   display: flex;
   gap: 41px;
 }
+@media (max-width: 375px) {
+  .chess-info-subtitle {
+    flex-direction: column;
+    gap: 0px;
+  }
+}
 
 .chess-info-subtitle-content {
   display: flex;
   flex-direction: column;
+}
+
+.table-block {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 28px 0 0;
+}
+
+.condition-block {
+  padding: 15px 15px 15px 0;
+  border-bottom: 2px solid #D0D0D0;
+  border-right: 2px solid #D0D0D0;
+}
+.condition-block_non-border {
+  border-bottom: none;
 }
 
 .condition {
@@ -680,12 +739,12 @@ html {
   line-height: 120%;
   color: #313131;
   opacity: 0.7;
-  padding: 16px 16px 16px 0;
-  border-bottom: 2px solid #D0D0D0;
-  border-right: 2px solid #D0D0D0;
+  margin: 0px;
 }
-.condition_non-border {
-  border-bottom: none;
+
+.value-block {
+  padding: 15px 0 15px 15px;
+  border-bottom: 2px solid #D0D0D0;
 }
 
 .value {
@@ -694,12 +753,13 @@ html {
   font-weight: 600;
   line-height: 120%;
   color: #313131;
-  padding: 16px 0 16px 16px;
-  border-bottom: 2px solid #D0D0D0;
+  margin: 0px;
 }
 .value_non-border {
   display: flex;
+  align-items: center;
   gap: 11px;
+  padding-left: 16px;
   border-bottom: none;
 }
 
