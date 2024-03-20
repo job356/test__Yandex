@@ -421,6 +421,12 @@ html {
   display: flex;
   gap: 16px;
 }
+@media (max-width: 375px) {
+  .header-button-block {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
 
 .header-button {
   font-style: normal;
@@ -446,9 +452,21 @@ html {
   color: #1F1F1F;
   border: 2px solid #313131;
 }
+@media (max-width: 375px) {
+  .header-button_light {
+    background: #FFFFFF;
+    border: none;
+  }
+}
 .header-button_light:hover {
   background: #1F1F1F;
   color: #FFFFFF;
+}
+@media (max-width: 375px) {
+  .header-button {
+    width: 100%;
+    padding: 18px 40px;
+  }
 }
 
 .show-more-button {
@@ -471,16 +489,33 @@ html {
   max-width: 1222px;
   margin: 0 auto;
 }
+@media (max-width: 375px) {
+  .wrapper {
+    max-width: 335px;
+  }
+}
 
 .header {
   padding: 26px 0 0;
   background-repeat: no-repeat;
   background-image: url(../Assets/img/header-bg.png);
 }
+@media (max-width: 375px) {
+  .header {
+    padding: 18px 0 0;
+    background-size: cover;
+    background-image: url(../Assets/img/headr-bg-mobile.png);
+  }
+}
 
 .header-content {
   max-width: 542px;
   padding: 62px 0 115px;
+}
+@media (max-width: 375px) {
+  .header-content {
+    padding: 41px 0 285px;
+  }
 }
 
 .header-content__title {
@@ -496,11 +531,24 @@ html {
 .header-content__title > * {
   width: 542px;
 }
+@media (max-width: 375px) {
+  .header-content__title > * {
+    width: 335px;
+  }
+}
 .header-content__title_center {
   text-align: center;
 }
 .header-content__title_right {
   text-align: right;
+}
+@media (max-width: 375px) {
+  .header-content__title {
+    font-style: normal;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 
 .header-content__subtitle {
@@ -511,6 +559,11 @@ html {
   color: #313131;
   text-align: center;
   margin: 24px 0 40px;
+}
+@media (max-width: 375px) {
+  .header-content__subtitle {
+    margin: 24px 0 32px;
+  }
 }
 
 .footer {
@@ -530,6 +583,7 @@ html {
 
 .logo {
   display: flex;
+  align-items: flex-end;
 }
 
 .logo__text {
@@ -539,6 +593,23 @@ html {
   line-height: 108%;
   color: #595653;
   margin: 0 0 0 6.35px;
+  text-transform: uppercase;
+}
+@media (max-width: 375px) {
+  .logo__text {
+    font-style: normal;
+    font-size: 1.442rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 0 0 0 5.5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo__icon {
+    width: 18.75px;
+    height: 27px;
+  }
 }
 
 .running-line-limiter {
@@ -551,6 +622,11 @@ html {
   padding: 18px 0;
   background: #F54932;
 }
+@media (max-width: 375px) {
+  .running-line {
+    padding: 10px 0;
+  }
+}
 
 .running-line__text {
   font-style: normal;
@@ -559,6 +635,14 @@ html {
   line-height: 110%;
   margin: 0px;
   color: #FFFFFF;
+}
+@media (max-width: 375px) {
+  .running-line__text {
+    font-style: normal;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
 }
 
 .chess-info-title {
@@ -751,6 +835,7 @@ html {
   height: 44px;
   border-radius: 50%;
   background: #313131;
+  cursor: pointer;
 }
 .arrow-contol:hover {
   background: #FBCE51;

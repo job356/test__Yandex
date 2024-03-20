@@ -4,3 +4,7 @@
     font-weight: $weight;
     line-height: $height;
 }
+
+@mixin media-mobile {
+    @media (max-width: 375px) {@content}
+}

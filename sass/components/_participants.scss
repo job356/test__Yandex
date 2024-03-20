@@ -30,6 +30,7 @@
     height: 44px;
     border-radius: 50%;
     background: $text-color-dark;
+    cursor: pointer;
     &:hover {
         @extend %transition;
         background: #FBCE51;

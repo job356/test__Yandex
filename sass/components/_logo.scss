@@ -1,5 +1,6 @@
 .logo {
     display: flex;
+    align-items: flex-end;
 }
 
 .logo__text {
@@ -7,4 +8,16 @@
     @include font($size: 1.665rem, $weight: 700, $height: 108%);
     color: #595653;
     margin: 0 0 0 6.35px;
+    text-transform: uppercase;
+    @include media-mobile {
+        @include font($size: 1.442rem);
+        margin: 0 0 0 5.5px;
+    }
+}
+
+.logo__icon {
+    @include media-mobile {
+        width: 18.75px;
+        height: 27px;
+    }
 }

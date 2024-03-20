@@ -2,11 +2,19 @@
     padding: 26px 0 0;
     background-repeat: no-repeat;
     background-image: url(../Assets/img/header-bg.png);
+    @include media-mobile {
+        padding: 18px 0 0;
+        background-size: cover;
+        background-image: url(../Assets/img/headr-bg-mobile.png);
+    }
 }
 
 .header-content {
     max-width: 542px;
     padding: 62px 0 115px;
+    @include media-mobile {
+        padding: 41px 0 285px;
+    }
 }
 
 .header-content__title {
@@ -18,12 +26,18 @@
     margin: 0px;
     >* {
         width: 542px;
+        @include media-mobile {
+            width: 335px;
+        }
     }
     &_center {
         text-align: center;
     }
     &_right {
         text-align: right;
+    }
+    @include media-mobile {
+        @include font($size: 3.6rem)
     }
 }
 
@@ -33,4 +47,7 @@
     color: $text-color-dark;
     text-align: center;
     margin: 24px 0 40px;
+    @include media-mobile {
+        margin: 24px 0 32px;
+    }
 }

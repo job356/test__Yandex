@@ -1,6 +1,10 @@
 .header-button-block {
     display: flex;
     gap: 16px;
+    @include media-mobile {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
 
 .header-button {
@@ -24,10 +28,18 @@
         background: transparent;
         color: $text-color-btn-dark;
         border: 2px solid $text-color-dark;
+        @include media-mobile {
+            background: #FFFFFF;
+            border: none;
+        }
     }
     &_light:hover {
         background: $text-color-btn-dark;
         color: #FFFFFF;
+    }
+    @include media-mobile {
+        width: 100%;
+        padding: 18px 40px;
     }
 }
 
