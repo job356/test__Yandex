@@ -570,6 +570,11 @@ html {
   padding: 40px 0 72px;
   background: #E9DED4;
 }
+@media (max-width: 375px) {
+  .footer {
+    padding: 40px 0 60px;
+  }
+}
 
 .footer__content {
   font-style: normal;
@@ -985,6 +990,11 @@ html {
   align-items: center;
   gap: 14px;
 }
+@media (max-width: 375px) {
+  .slider-control {
+    display: none;
+  }
+}
 .slider-control_steps-mobile {
   display: none;
 }
@@ -995,6 +1005,18 @@ html {
     justify-content: center;
     gap: 16px;
     padding: 28px 0 0;
+  }
+}
+.slider-control_participants-mobile {
+  display: none;
+}
+@media (max-width: 375px) {
+  .slider-control_participants-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 35px 0 0;
   }
 }
 
@@ -1041,6 +1063,11 @@ html {
 .participants {
   padding: 200px 0 0;
 }
+@media (max-width: 375px) {
+  .participants {
+    padding: 120px 0 0;
+  }
+}
 
 .participants-title {
   display: flex;
@@ -1057,25 +1084,53 @@ html {
   color: #313131;
   margin: 0px;
 }
+@media (max-width: 375px) {
+  .participants-title__text {
+    font-style: normal;
+    font-size: 3.6rem;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}
 
 .slider-limitter {
   padding: 60px 0 140px;
   overflow: hidden;
+}
+@media (max-width: 375px) {
+  .slider-limitter {
+    padding: 40px 0 100px;
+  }
 }
 
 .slider {
   display: flex;
   gap: 20px;
 }
+@media (max-width: 375px) {
+  .slider {
+    gap: 51px;
+  }
+}
 
 .participants-slide {
   padding: 0 37px;
+}
+@media (max-width: 375px) {
+  .participants-slide {
+    padding: 0 25px 0 25px;
+  }
 }
 
 .participants-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 375px) {
+  .participants-content {
+    width: max-content;
+  }
 }
 
 .participants-content__name {
@@ -1086,6 +1141,11 @@ html {
   margin: 28px 0 6px;
   color: #313131;
 }
+@media (max-width: 375px) {
+  .participants-content__name {
+    text-align: center;
+  }
+}
 
 .participants-content__description {
   font-style: normal;
@@ -1095,6 +1155,11 @@ html {
   margin: 0 0 20px;
   color: #313131;
   opacity: 0.6;
+}
+@media (max-width: 375px) {
+  .participants-content__description {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

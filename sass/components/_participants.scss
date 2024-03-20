@@ -1,5 +1,8 @@
 .participants {
     padding: 200px 0 0;
+    @include media-mobile {
+        padding: 120px 0 0;
+    }
 }
 
 .participants-title {
@@ -14,26 +17,41 @@
     text-transform: uppercase;
     color: $text-color-dark;
     margin: 0px;
+    @include media-mobile {
+        @include font($size: 3.6rem);
+    }
 }
 
 .slider-limitter {
     padding: 60px 0 140px;
     overflow: hidden;
+    @include media-mobile {
+        padding: 40px 0 100px;
+    }
 }
 
 .slider {
     display: flex;
     gap: 20px;
+    @include media-mobile {
+        gap: 51px;
+    }
 }
 
 .participants-slide {
     padding: 0 37px;
+    @include media-mobile {
+        padding: 0 25px 0 25px;
+    }
 }
 
 .participants-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include media-mobile {
+        width: max-content;
+    }
 }
 
 .participants-content__name {
@@ -41,6 +59,9 @@
     @include font($size: 2.4rem, $weight: 600);
     margin: 28px 0 6px;
     color: $text-color-dark;
+    @include media-mobile {
+        text-align: center
+    }
 }
 
 .participants-content__description {
@@ -49,4 +70,7 @@
     margin: 0 0 20px;
     color: $text-color-dark;
     opacity: 0.6;
+    @include media-mobile {
+        text-align: center;
+    }
 }

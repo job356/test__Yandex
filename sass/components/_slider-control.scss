@@ -2,6 +2,9 @@
     display: flex;
     align-items: center;
     gap: 14px;
+    @include media-mobile {
+        display: none;
+    }
     &_steps-mobile {
         display: none;
         @include media-mobile {
@@ -10,6 +13,16 @@
             justify-content: center;
             gap: 16px;
             padding: 28px 0 0;
+        }
+    }
+    &_participants-mobile {
+        display: none;
+        @include media-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            padding: 35px 0 0;
         }
     }
 }
