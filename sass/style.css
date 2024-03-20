@@ -722,6 +722,12 @@ html {
   grid-template-columns: 1fr 1fr;
   padding: 28px 0 0;
 }
+@media (max-width: 375px) {
+  .table-block {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .condition-block {
   padding: 15px 15px 15px 0;
@@ -730,6 +736,13 @@ html {
 }
 .condition-block_non-border {
   border-bottom: none;
+}
+@media (max-width: 375px) {
+  .condition-block {
+    padding: 15px 0 0;
+    border-bottom: none;
+    border-right: none;
+  }
 }
 
 .condition {
@@ -745,6 +758,11 @@ html {
 .value-block {
   padding: 15px 0 15px 15px;
   border-bottom: 2px solid #D0D0D0;
+}
+@media (max-width: 375px) {
+  .value-block {
+    padding: 12px 0 15px 0;
+  }
 }
 
 .value {
@@ -762,6 +780,11 @@ html {
   padding-left: 16px;
   border-bottom: none;
 }
+@media (max-width: 375px) {
+  .value_non-border {
+    padding: 12px 0 0;
+  }
+}
 
 .chess-info__link {
   font-style: normal;
@@ -771,6 +794,15 @@ html {
   color: #3057A2;
   text-decoration: none;
   margin: 48px 0 0;
+}
+@media (max-width: 375px) {
+  .chess-info__link {
+    font-style: normal;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 120%;
+    margin: 40px 0 0;
+  }
 }
 
 .step-wrapper {

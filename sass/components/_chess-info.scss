@@ -59,6 +59,10 @@
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     padding: 28px 0 0;
+    @include media-mobile {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .condition-block {
@@ -67,6 +71,11 @@
     border-right: 2px solid #D0D0D0;
     &_non-border {
         border-bottom: none
+    }
+    @include media-mobile {
+        padding: 15px 0 0;
+        border-bottom: none;
+        border-right: none;
     }
 }
 
@@ -81,6 +90,9 @@
 .value-block {
     padding: 15px 0 15px 15px;
     border-bottom: 2px solid #D0D0D0;
+    @include media-mobile {
+        padding: 12px 0 15px 0;
+    }
 }
 
 .value {
@@ -94,6 +106,9 @@
         gap: 11px;
         padding-left: 16px;
         border-bottom: none;
+        @include media-mobile {
+            padding: 12px 0 0;
+        }
     }
 }
 
@@ -103,4 +118,8 @@
     color: $text-color-link;
     text-decoration: none;
     margin: 48px 0 0;
+    @include media-mobile {
+        @include font($size: 1.8rem);
+        margin: 40px 0 0;
+    }
 }
