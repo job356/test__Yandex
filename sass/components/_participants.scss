@@ -16,41 +16,6 @@
     margin: 0px;
 }
 
-.slider-control {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-}
-
-.arrow-contol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background: $text-color-dark;
-    cursor: pointer;
-    &:hover {
-        @extend %transition;
-        background: #FBCE51;
-    }
-}
-
-.slide-value{
-    display: flex;
-}
-
-.slide-value {
-    @extend %font-primary;
-    @include font($size: 1.6rem);
-    margin: 0px;
-    color: $text-color-dark;
-    &_default {
-        opacity: 0.6;
-    }
-}
-
 .slider-limitter {
     padding: 60px 0 140px;
     overflow: hidden;

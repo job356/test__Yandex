@@ -7,7 +7,11 @@
     @include font($size: 5.4rem);
     text-transform: uppercase;
     margin: 75px 0 54px;
-    color: $text-color-dark
+    color: $text-color-dark;
+    @include media-mobile {
+        @include font($size: 3.6rem, $height: 110%);
+        margin: 120px 0 148px;
+    }
 }
 
 .step-block__title_small {
@@ -16,26 +20,73 @@
     @extend %font-primary;
     @include font($size: 2rem);
     color: $text-color-link;
+    @include media-mobile {
+        @include font($size: 1.8rem);
+        margin: 12px 0 0;
+    }
+}
+
+.steps-board-limiter {
+    overflow: hidden;
 }
 
 .steps-board {
     display: grid;
     grid-template-rows: 112px 112px 136px;
     grid-template-columns: 394px 394px 394px;
-    gap: 20px 
+    gap: 20px;
+    @include media-mobile {
+        grid-template-rows: repeat(2, 150px);
+        grid-template-columns: repeat(5, 335px);
+        gap: 0 20px;
+    } 
 }
 
 .step {
     padding: 20px;
     background-image: url(../Assets/img/step-bg.png);
-    &_vertical {
+    &_1 {
+        @include media-mobile {
+            grid-area: 1/1/2/2;
+            padding: 62px 20px 0;
+        }
+    }
+    &_2 {
+        @include media-mobile {
+            grid-area: 2 / 1 / 3 / 2;
+            padding: 28px 20px 12px;
+        }
+    }
+    &_3 {
         grid-row-start: 1;
         grid-column-start: 3;
 
         grid-row-end: 3;
         grid-column-end: 4;
+        @include media-mobile {
+            grid-area: 1 / 2 / 3 / 3;
+            padding: 62px 20px 0;
+        }
     }
-    &_horizontal {
+    &_4 {
+        @include media-mobile {
+            grid-area: 1 / 3 / 2 / 4;
+            padding: 62px 20px 0;
+        }
+    }
+    &_5 {
+        @include media-mobile {
+            grid-area: 2 / 3 / 3 / 4;
+            padding: 28px 20px 0;
+        }
+    }
+    &_6 {
+        @include media-mobile {
+            grid-area: 1 / 4 / 3 / 5;
+            padding: 62px 20px 0;
+        }
+    }
+    &_7 {
         grid-row-start: 3;
         grid-column-start: 2;
 
@@ -43,6 +94,10 @@
         grid-column-end: 4;
 
         padding-right: 285px;
+        @include media-mobile {
+            grid-area: 1 / 5 / 3 / 6;
+            padding: 62px 20px;
+        }
     }
 }
 
@@ -73,10 +128,19 @@
     @include font($size: 2rem, $weight: 500);
     color: $text-color-dark;
     margin: 0px;
+    @include media-mobile {
+        @include font($size: 1.8rem);
+    }
 }
 
 .step-block__img {
     position: absolute;
     top: 351px;
     left: 884px;
+    @include media-mobile {
+        width: 335px;
+        height: 182px;
+        top: 210px;
+        left: 0px;
+    }
 }
