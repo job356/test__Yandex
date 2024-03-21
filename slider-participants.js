@@ -1,10 +1,22 @@
-// ;
-// function updateValue() {
-//     const currentValueInt = parseInt(currentValue.textContent, 10);
-//     currentValue.textContent = currentValueInt + '1';
-// }let currentValue = document.querySelector('.slide-value_current')
+const currentValue = document.querySelector('.slide-value_current-mobile');
+const maxValue = 6;
+let currentIndex = 1;
 
-// setInterval(updateValue, 4000);
+function updateCurrentValue() {
+  currentValue.textContent = currentIndex;
+}
+
+function incrementCurrentValue() {
+  if (currentIndex < maxValue) {
+    currentIndex++;
+    updateCurrentValue();
+  } else {
+    currentIndex = 1;
+    updateCurrentValue();
+  }
+}
+
+setInterval(incrementCurrentValue, 4000);
 
 // Устанавливаем начальное положение слайдера
 let offset = 0;
