@@ -415,6 +415,7 @@ ul {
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 .header-button-block {
@@ -438,6 +439,7 @@ html {
   text-align: center;
   border: none;
   border-radius: 66px;
+  text-decoration: none;
 }
 .header-button_dark {
   background: #1F1F1F;
