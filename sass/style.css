@@ -617,13 +617,8 @@ html {
   }
 }
 
-.running-line-limiter {
-  width: 100%;
-  overflow: hidden;
-}
-
 .running-line {
-  width: max-content;
+  overflow: hidden;
   padding: 18px 0;
   background: #F54932;
 }
@@ -638,8 +633,10 @@ html {
   font-size: 2.2rem;
   font-weight: 400;
   line-height: 110%;
+  white-space: nowrap;
   margin: 0px;
   color: #FFFFFF;
+  animation: move 20s linear infinite;
 }
 @media (max-width: 375px) {
   .running-line__text {
@@ -650,6 +647,14 @@ html {
   }
 }
 
+@keyframes move {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 .chess-info-title {
   display: flex;
   padding: 80px 0 64px;
