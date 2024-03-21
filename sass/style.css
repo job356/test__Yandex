@@ -1110,11 +1110,14 @@ html {
 
 .slider {
   display: flex;
+  position: relative;
+  left: 0px;
   gap: 20px;
+  transition: all ease 1s;
 }
 @media (max-width: 375px) {
   .slider {
-    gap: 51px;
+    gap: 0px;
   }
 }
 
@@ -1123,7 +1126,7 @@ html {
 }
 @media (max-width: 375px) {
   .participants-slide {
-    padding: 0 25px 0 25px;
+    padding: 0px;
   }
 }
 
@@ -1134,7 +1137,7 @@ html {
 }
 @media (max-width: 375px) {
   .participants-content {
-    width: max-content;
+    width: 335px;
   }
 }
 
@@ -1149,6 +1152,7 @@ html {
 @media (max-width: 375px) {
   .participants-content__name {
     text-align: center;
+    white-space: nowrap;
   }
 }
 
@@ -1164,6 +1168,7 @@ html {
 @media (max-width: 375px) {
   .participants-content__description {
     text-align: center;
+    white-space: nowrap;
   }
 }
 

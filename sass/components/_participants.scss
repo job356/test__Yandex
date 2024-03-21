@@ -32,16 +32,19 @@
 
 .slider {
     display: flex;
+    position: relative;
+    left: 0px;
     gap: 20px;
+    transition: all ease 1s;
     @include media-mobile {
-        gap: 51px;
+        gap: 0px;
     }
 }
 
 .participants-slide {
     padding: 0 37px;
     @include media-mobile {
-        padding: 0 25px 0 25px;
+        padding: 0px;
     }
 }
 
@@ -50,7 +53,7 @@
     flex-direction: column;
     align-items: center;
     @include media-mobile {
-        width: max-content;
+        width: 335px;
     }
 }
 
@@ -60,7 +63,8 @@
     margin: 28px 0 6px;
     color: $text-color-dark;
     @include media-mobile {
-        text-align: center
+        text-align: center;
+        white-space: nowrap;
     }
 }
 
@@ -72,5 +76,6 @@
     opacity: 0.6;
     @include media-mobile {
         text-align: center;
+        white-space: nowrap;
     }
 }
