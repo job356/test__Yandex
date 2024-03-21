@@ -31,6 +31,9 @@
 }
 
 .steps-board {
+    position: relative;
+    left: 0px;
+    transition: all ease 1s;
     display: grid;
     grid-template-rows: 112px 112px 136px;
     grid-template-columns: 394px 394px 394px;

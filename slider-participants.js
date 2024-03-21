@@ -1,3 +1,11 @@
+// ;
+// function updateValue() {
+//     const currentValueInt = parseInt(currentValue.textContent, 10);
+//     currentValue.textContent = currentValueInt + '1';
+// }let currentValue = document.querySelector('.slide-value_current')
+
+// setInterval(updateValue, 4000);
+
 // Устанавливаем начальное положение слайдера
 let offset = 0;
 
